@@ -1,0 +1,4 @@
+USER=66602603
+PASSWORD=ryhcobpk
+TARGET=regin
+SIPP_EXTRA_ARGS="-r 1000 -m 1 -p 5060 -timeout 1s"
