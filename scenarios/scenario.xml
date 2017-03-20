@@ -22,27 +22,5 @@
       X-NAT: Yes
     ]]>
   </send>
-  <recv response="100" optional="true"></recv>
-  <recv response="401" auth="true"></recv>
-
-  <send retrans="500">
-    <![CDATA[
-      REGISTER sip:[field2] SIP/2.0
-      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
-      Via: SIP/2.0/[transport] [field5]:[local_port];branch=[branch]
-      From: <sip:[field1]@[field2]>;tag=[call_number]
-      To: <sip:[field0]@[field2]>
-      Call-ID: [call_id]
-      CSeq: [cseq] REGISTER
-      Contact: sip:[field0]@[field5]:[local_port]
-      User-Agent: SIPp-Test Harness
-      [field6]
-      Max-Forwards: 10
-      Expires: 3000
-      Content-Length: 0
-      Path: <sip:[local_ip]:[local_port];lr>
-      X-NAT: Yes
-    ]]>
-  </send>
   <recv response="200"></recv>
 </scenario>

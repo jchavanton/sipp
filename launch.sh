@@ -6,7 +6,7 @@ INPUT_FILE="scenarios/input.csv"
 MSG_FILE="/tmp/sipp_msg.log"
 LOG_FILE="/tmp/sipp.log"
 ERR_LOG_FILE="/tmp/sipp_err.log"
-SIPP_EXTRA_ARGS=" -m 1 -r 1 -timeout 5s"
+SIPP_EXTRA_ARGS=" -m 1000 -r 1000 " # -timeout 15s"
 
 sipp \
 	${REMOTE_HOST} \
